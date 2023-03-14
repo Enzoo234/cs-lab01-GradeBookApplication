@@ -43,13 +43,6 @@ namespace GradeBook.UserInterfaces
             var type = parts[2];
             var isWeight = bool.Parse(parts[3]);
             
-            /*
-            BaseGradeBook gradeBook = new BaseGradeBook(name, IsWeight);
-            Console.WriteLine("Created gradebook {0}.", name);
-            GradeBookUserInterface.CommandLoop(gradeBook);
-            */
-            
-
             if (type == "standard")
             {
                 StandardGradeBook gradeBook = new StandardGradeBook(name, isWeight);
